@@ -1,10 +1,6 @@
 {
-    "name": "react-berry-admin-template",
-    "version": "0.0.4",
-    "build": {
-        "yarn": "v14.0.0,v16.0.0",
-        "npm": "v14.0.0,v16.0.0"
-    },    
+    "name": "berry-admin-ui",
+    "version": "1.0.0",
     "dependencies": {
         "@emotion/react": "^11.4.0",
         "@emotion/styled": "^11.3.0",
@@ -38,8 +34,10 @@
         "yup": "^0.32.9"
     },
     "scripts": {
+        "start:dev":"react-scripts --openssl-legacy-provider start",
         "start": "react-scripts start",
         "build": "react-scripts build",
+        "build:dev": "react-scripts --openssl-legacy-provider build",
         "test": "react-scripts test --passWithNoTests",
         "eject": "react-scripts eject"
     },
