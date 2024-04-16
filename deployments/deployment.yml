@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: berry-admin-ui
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: berry-admin-ui
+  template:
+    metadata:
+      labels:
+        app: berry-admin-ui
+    spec:
+      containers:
+        - name: my-app-container
+          image: tasmidur/berry-admin-ui-image:master-ddb0bb449bf5e6a82f89b1eef9c5f9d1dcbcefcb
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
