@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: my-app-container
-          image: tasmidur/berry-admin-ui-image:master-ddb0bb449bf5e6a82f89b1eef9c5f9d1dcbcefcb
+          image: tasmidur/berry-admin-ui-image:master-f7448bc1a1d3b83faa16eadecdbfbbed840c1e0d
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
